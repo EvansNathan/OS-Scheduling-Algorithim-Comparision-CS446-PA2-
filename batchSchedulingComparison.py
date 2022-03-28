@@ -28,7 +28,7 @@ def sort_by_priority(process):
 
 
 def first_come_first_served_sort(process_list):
-    print ("First Come First Served Sort")
+    print("First Come First Served Sort")
     sorted_process_list = sorted(process_list, key=sort_by_arrival)
     time = 0
     for process in sorted_process_list:
@@ -43,7 +43,7 @@ def first_come_first_served_sort(process_list):
 
 
 def shortest_job_first_sort(process_list, sjf_run_order):
-    print ("Shortest Job First Sort")
+    print("Shortest Job First Sort")
 
     process_ran = 0
     time = 0
@@ -77,7 +77,7 @@ def shortest_job_first_sort(process_list, sjf_run_order):
 
 
 def priority_sort(process_list):
-    print ("Priority Sort")
+    print("Priority Sort")
     priority_process_list = []
 
     sorted_process_list = sorted(process_list, key=sort_by_arrival)
@@ -178,11 +178,11 @@ def main():
         quit()
 
     if sort_type == "ShortestFirst":
-        print "PID ORDER OF EXECUTION"
+        print("PID ORDER OF EXECUTION")
         for process in sjf_run_order:
-            print process.process_id
-    print "Average Turnaround Time: " + str(average_turnaround_time)
-    print "Average Wait Time: " + str(average_wait_time)
+            print(process.process_id)
+    print("Average Turnaround Time: " + str(average_turnaround_time))
+    print("Average Wait Time: " + str(average_wait_time))
 
 
 if __name__ == "__main__":
